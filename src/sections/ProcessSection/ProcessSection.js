@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import clsx from "clsx";
-import { gsap, ScrollTrigger } from "gsap";
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useMediaPredicate } from "react-media-hook";
 
 import "./processSecton.css";
@@ -52,10 +53,9 @@ const ProcessSection = ({ otherClasses }) => {
           scrollTrigger: {
             trigger: horizontalSection.current,
             pin: true,
-            start: "top 95px",
+            start: "top 5px",
             end: "+=500%",
             scrub: 0.5,
-            markers: true,
           },
         });
       }, horizontalSection);
@@ -65,12 +65,12 @@ const ProcessSection = ({ otherClasses }) => {
         ease: "none",
         scrollTrigger: {
           trigger: horizontalSection.current,
-          start: "top 95px",
+          start: "top 5px",
           end: "+=450%",
           scrub: 0.3,
         },
       });
-
+      
       return () => ctx.revert();
     }
   }, [isDesktop]);
@@ -86,7 +86,7 @@ const ProcessSection = ({ otherClasses }) => {
       className={processSectionClasses}
       data-testid="process-section"
     >
-      <div className="max-w-[1862px] mx-auto w-full px-5 lg:px-20 lg:py-20 xl:px-[162px] relative">
+      <div className="max-w-[1862px] mx-auto w-full px-5 lg:px-20 lg:pb-20 xl:px-[162px] relative">
         <h1 className="text-primary_heading_color font-DmSerifDisplay font-normal">
           Our <span className="text-primary_teal_600">Recipe</span> for Success
         </h1>
