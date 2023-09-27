@@ -1,0 +1,8 @@
+.progress_bar {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    height: 6px;
+}
