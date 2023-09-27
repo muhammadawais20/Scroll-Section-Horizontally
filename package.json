@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "autoprefixer": "10.4.15",
-    "clx": "^1.0.0",
+    "clsx": "^2.0.0",
     "gsap": "^3.12.2",
     "next": "13.5.2",
     "postcss": "8.4.30",
